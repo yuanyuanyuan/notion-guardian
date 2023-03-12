@@ -6,6 +6,13 @@ Notion Guardian offers a quick way to setup a secure backup of your data in a pr
 
 The tool separates the logic for running the export and the actual workspace data into two repositories. This way your backups are not cluttered with other scripts. If you prefer to have a one-repo solution or want to backup specific blocks of your workspace, checkout the [notion-backup fork by upleveled](https://github.com/upleveled/notion-backup).
 
+## features note
+update:
+1. add only save 1 months data
+2. cron start at 4 AM every day
+3. do not unzip the package,and add datetime
+   1. the timezone is 'Asia/Shanghai' ,if you don't like it ,you can change it at the [code](https://github.com/yuanyuanyuan/notion-guardian/blob/main/index.js)
+
 ## How to setup
 
 1. Create a separate private repository for your backups to live in (e.g. "my-notion-backup"). Make sure you create a `main` branch — for example by clicking "Add a README file" when creating the repo.
